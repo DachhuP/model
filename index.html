@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>Model</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<style>
+    a{
+        text-decoration: none;
+    }
+    .w3-button{
+    color: black;
+    background-color:  rgb(173, 173, 173);
+    border: 3px ridge rgb(65, 65, 65);
+  
+    }
+    .w3-button:hover{
+        color: black;
+    background-color:  rgb(173, 173, 173);
+    }
+    a:hover{
+        background-color: black;
+        color: white;
+    }
+    .w3-modal-content{
+      top: 0;
+      right: 0;
+      display: block;
+    }
+    #mod{
+      width: 450px;
+      height: 150px;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+   
+</style>
+<div class="w3-container">
+  <h2>Modal (onmouseover) </h2>
+  <div class="nav-bar" style="background-color: rgb(173, 173, 173);">
+ 
+  <button onmouseover="document.getElementById('id01').style.display='block'" class="w3-button">Open Animated Modal</button>
+    
+</div>
+  <div id="id01" class="w3-modal">
+    <!-- <div class="w3-modal-content w3-animate-top w3-card-4"> -->
+        <div id="mod" class="w3-modal-content w3-right w3-topright">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2><a href="#">Header(link)</a></h2>
+      </header>
+      <div class="w3-container">
+        <p><a href="#">Anchor(link)</a> </p>
+        <p><a href="#">Anchor(link)</a></p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p><a href="#">Footer(link)</a></p>
+      </footer>
+    </div>
+  </div>
+</div>
+          
+</body>
+</html>
