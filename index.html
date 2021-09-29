@@ -23,18 +23,14 @@
         color: white;
     }
     .w3-modal-content{
-      top: 0;
+        position: absolute;
+      bottom: 0;
       right: 0;
       display: block;
-    }
-    #mod{
       width: 450px;
       height: 150px;
-      position: fixed;
-      top: 0;
-      right: 0;
     }
-   
+ 
 </style>
 <div class="w3-container">
   <h2>Modal (onmouseover) </h2>
@@ -45,8 +41,9 @@
 </div>
   <div id="id01" class="w3-modal">
     <!-- <div class="w3-modal-content w3-animate-top w3-card-4"> -->
-        <div id="mod" class="w3-modal-content w3-right w3-topright">
-      <header class="w3-container w3-teal"> 
+        <div id="mod" class="w3-modal-content">
+            <div class="container">
+      <header class="w3-container w3-teal w3-end"> 
         <span onclick="document.getElementById('id01').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
         <h2><a href="#">Header(link)</a></h2>
@@ -60,6 +57,7 @@
       </footer>
     </div>
   </div>
+</div>
 </div>
           
 </body>
